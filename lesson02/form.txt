@@ -1,0 +1,8 @@
+Form: GET
+	input -> name: value
+
+	Action -> click submit button
+	->Build URL:
+		http://localhost/aptech/C2206L/lesson02/form.php?fullname=TRAN+VAN+A&email=gokisoft.com%40gmail.com&birthday=2022-11-18&address=HA+NOI
+
+		-> load URL
