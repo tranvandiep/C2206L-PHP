@@ -47,3 +47,14 @@ Route::get('/test4', [App\Http\Controllers\TestController::class, 'test4']);
 Route::get('/test4/a.html', [App\Http\Controllers\TestController::class, 'test4']);
 Route::get('/test4/b', [App\Http\Controllers\TestController::class, 'test4']);
 Route::get('/test4/c', [App\Http\Controllers\TestController::class, 'test4']);
+
+Route::get('/cals/x/{x}/y/{y}', function($x, $y) {
+    echo $x + $y;
+});
+
+
+Route::get('/{slug}.html', function($slug) {
+    echo $slug;
+});
+
+Route::get('/danh-sach/{slug}.html', [App\Http\Controllers\TestController::class, 'showList']);
